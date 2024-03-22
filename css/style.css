@@ -1,0 +1,60 @@
+body{
+  background-color: var(--gray);
+}
+
+:root{
+  --black: #5965f8;
+  --gray: #101820;
+}
+
+h1{
+  color: var(--black);
+}
+
+
+.accordion {
+  background-color: var(--gray);
+  color: var(--black);
+  border: 1px solid var(--black);
+  cursor: pointer;
+  padding: 25px;
+  width: 60%;
+  text-align: left;
+  transition: 0.4s;
+  font-size: 25px;
+  
+  }
+
+.accordion:after {
+  content: '\02795'; 
+  font-size: 13px;
+  color: var(--gray);
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; 
+
+}
+
+
+.active, .accordion:hover {
+  background-color: var(--gray);
+  
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 20px;
+  background-color: var(--gray);
+  width: 60%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.panel p{
+  color: var(--black);
+  font-size: 25px;
+}
+
